@@ -70,17 +70,16 @@ public class PurchaseServlet extends HttpServlet {
 					Purchase p = new Purchase(userSession, f, date, items.get(code), f.getPrice());
 					try {
 						PurchaseControl.addPurchase(p);
-						//mostrar la compra
-						response.getWriter().append("Compra realizada");
-						//vaciar carrito
-						cart.getItems().keySet().clear();
-//						Cart newCart = new Cart();
-						response.sendRedirect("LoginServlet");
-//						se.setAttribute("cart", newCart);
+						
 					} catch (ControlException e) {
 						response.sendRedirect("errorBackToList.jsp?msg='" + e.getMessage() + "'");
 					}
 				}
+				
+				//vaciar carrito
+				Cart newCart = new Cart();
+				response.sendRedirect("LoginServlet");
+				se.setAttribute("cart", newCart);
 			}else {
 				response.sendRedirect("LoginServlet");
 			}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FC - Crear cuenta</title>
+<link rel='stylesheet' type='text/css'  href='css/login.css'>
+</head>
+<body>
+	<table align="center">
+		<tr>
+			<td>
+				<div class="title">
+					<h1>Floristería Colás</h1>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<div class="form-container">
+				<form action="SignupServlet" method="post">
+					<div class="form-title">
+						<p>Crear cuenta</p>
+					</div>
+					<div class="form-group">
+						<label class="form-label" for="name">Nombre</label>
+						<input type="text" class="form-input" placeholder="Pepito" name="name" required>
+					</div>
+					<div class="form-group">
+						<label class="form-label" for="last_name">Apellidos</label>
+						<input type="text" class="form-input" placeholder="Pérez" name="last_name" required>
+					</div>
+					<div class="form-group">
+						<label class="form-label" for="date_of_birth">Fecha de nacimiento</label>
+						<input type="date" class="form-input" name="date_of_birth" required>
+					</div>
+					<div class="form-group">
+						<label class="form-label" for="genre">Género</label>
+						<input type="radio" id="form-radio" value="Male" name="genre" required>Hombre
+						<input type="radio" id="form-radio" value="Female" name="genre">Mujer
+					</div>
+					<div class="form-group">
+						<label class="form-label" for="username">Nombre de usuario</label>
+						<input type="text" class="form-input" placeholder="perezpep25" name="username" required>
+					</div>
+					<div class="form-group">
+						<label class="form-label" for="password">Contraseña</label>
+						<input type="password" class="form-input" name="password" placeholder="*******" required>
+					</div>
+					<div class="form-button">
+						<button type="submit" class="btn">Enviar</button><br>
+						<p><a href="index.jsp" class="btn" id="link">Volver</a></p>
+					</div>
+				</form>
+			</div>
+			</td>
+		</tr>
+	</table>
+<div class="content">
+	
+	
+	
+</div>
+
+</body>
+</html>

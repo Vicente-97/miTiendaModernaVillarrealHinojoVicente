@@ -1,0 +1,99 @@
+@charset "UTF-8";
+html{
+    font-size: 25px;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.header{
+    max-width: 100%;
+    height: 2rem;
+    background-color: green;
+    padding: 1rem;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 1rem;
+}
+.logout{
+    flex-basis: 10%;
+}
+.title{
+    flex-basis: 80%;
+    font-size: 2rem;
+}
+.user{
+	flex-basis: 10%;
+    font-size: 0.5rem;
+}
+
+.grid-container{
+    margin: auto;
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+    grid-auto-rows: 300px;
+    gap: 0.4rem;
+}
+
+.grid-item{
+    position: relative;
+    background-color: lightgreen;
+}
+
+.grid-item .image {
+    width: 100%;
+    height: 20%;
+    overflow: hidden;
+}
+
+.grid-item .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%; /*imagen centrada*/
+    transition: 0.5s ease-in-out;
+}
+.grid-item:hover .image img{
+    transform:scale(1.2);
+}
+
+.grid-item .info {
+	width: 90%;
+    height: 40%;
+    font-size: 0.5rem;
+    color: black;
+}
+.grid-item .buttons{
+	width: 100%;
+    height: 40%;
+	font-size: 0.3rem;
+	overflow: hidden;
+}
+
+.btn{
+    background: 0 0 rgb(165, 112, 185);
+    border:1px solid rgb(110, 40, 107);
+    border-radius:3px;
+    color: white;
+    font-size:1rem;
+    padding:10 50px;
+    font-weight: 400;
+    font-family:inherit;
+}
+.btn:hover{
+    border-color:#ffffff;
+}
+
+#link{
+	text-decoration: none;
+	padding: 1px 6px;
+    float:left;
+}

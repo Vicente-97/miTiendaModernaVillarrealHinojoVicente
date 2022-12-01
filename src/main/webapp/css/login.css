@@ -1,0 +1,74 @@
+@charset "ISO-8859-1";
+
+html{
+	font-size: 25px;
+}
+
+body{
+	margin: auto;
+	height:100vh;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:#3ab179;
+}
+
+.title{
+	text-align: center;
+}
+
+.image img{
+	height: 409px;
+}
+
+.form-container{
+    width:500px;
+    box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+    padding:1rem;
+    background-color:#fff;
+}
+.form-title{
+	font-size: 1.25rem;
+	text-align: center;
+}
+.form-group{
+    margin-bottom:1rem;
+}
+.form-label{
+    font-size:1rem;
+    display:block;
+    margin-bottom: 0.1rem;
+}
+.form-radio{
+	font-size:0.5rem;
+}
+.form-input{
+    box-shadow:none;
+    border-radius:0;
+    border-style:none none solid none;
+    width:100%;
+    font-size:0.8rem;
+}
+.form-input:focus{
+    box-shadow:none;
+    border-color: #3ab179;
+    outline:none;
+}
+
+.btn{
+    background: 0 0 #fff;
+    border:1px solid #aaa;
+    border-radius:3px;
+    color: black;
+    font-size:1rem;
+    padding:10 50px;
+    font-weight: 400;
+    font-family:inherit;
+}
+.btn:hover{
+    border-color:#3ab179;
+}
+
+#link{
+	text-decoration: none;
+	padding: 1px 6px;
+}
+

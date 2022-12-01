@@ -1,0 +1,598 @@
+{
+	"info": {
+		"_postman_id": "0c61523d-201f-46a5-ae5d-2e761c9f3def",
+		"name": "Prueba tienda Colás",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24407807"
+	},
+	"item": [
+		{
+			"name": "GET login",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/floristeriaColas/LoginServlet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"floristeriaColas",
+						"LoginServlet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET signup",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:8080/floristeriaColas/SignupServlet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"floristeriaColas",
+						"SignupServlet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/floristeriaColas/SignupServlet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"floristeriaColas",
+						"SignupServlet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/floristeriaColas/LoginServlet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"floristeriaColas",
+						"LoginServlet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addFlower sin logueo",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "ioliasa",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "ioliasa",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/floristeriaColas/addFlower.jsp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"floristeriaColas",
+						"addFlower.jsp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login ok admin",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "ioliasa",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "ioliasa",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/floristeriaColas/LoginServlet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"floristeriaColas",
+						"LoginServlet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addFlower admin",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:8080/floristeriaColas/addFlower.jsp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"floristeriaColas",
+						"addFlower.jsp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login pass error",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "ioliasa",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "aaa",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/floristeriaColas/LoginServlet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"floristeriaColas",
+						"LoginServlet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login user error",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "aaa",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "ioliasa",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/floristeriaColas/LoginServlet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"floristeriaColas",
+						"LoginServlet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup ok",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Juan",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "García",
+							"type": "text"
+						},
+						{
+							"key": "date_of_birth",
+							"value": "2005-04-25",
+							"type": "text"
+						},
+						{
+							"key": "genre",
+							"value": "Male",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "juang",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "albaricoque",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/floristeriaColas/SignupServlet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"floristeriaColas",
+						"SignupServlet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup date error",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Paco",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Gil",
+							"type": "text"
+						},
+						{
+							"key": "date_of_birth",
+							"value": "2020-04-25",
+							"type": "text"
+						},
+						{
+							"key": "genre",
+							"value": "Male",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "pacog",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "albaricoque",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/floristeriaColas/SignupServlet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"floristeriaColas",
+						"SignupServlet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup error user exists",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Juanjo",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Garcías",
+							"type": "text"
+						},
+						{
+							"key": "date_of_birth",
+							"value": "2005-04-25",
+							"type": "text"
+						},
+						{
+							"key": "genre",
+							"value": "Male",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "juang",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "albaricoque",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/floristeriaColas/SignupServlet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"floristeriaColas",
+						"SignupServlet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login ok user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "juang",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "albaricoque",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/floristeriaColas/LoginServlet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"floristeriaColas",
+						"LoginServlet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addFlower user error",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:8080/floristeriaColas/addFlower.jsp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"floristeriaColas",
+						"addFlower.jsp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Volver a index",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:8080/floristeriaColas/index.jsp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"floristeriaColas",
+						"index.jsp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup empty genre",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Juanjo",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Garcías",
+							"type": "text"
+						},
+						{
+							"key": "date_of_birth",
+							"value": "2005-04-25",
+							"type": "text"
+						},
+						{
+							"key": "genre",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "juang2",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "albaricoque",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/floristeriaColas/SignupServlet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"floristeriaColas",
+						"SignupServlet"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
